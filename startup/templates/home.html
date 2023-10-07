@@ -2,9 +2,11 @@
 
 {% block content %}
 <body>
-  <button>Login as Mentor</button>
-  <button>Login as StartUp</button>
-  <button>Login as Student</button>
+  <div class="login-btns">
+    <button class="home-btn"><a href="{% url 'loginAsMentor' %}">Login as Mentor</a></button>
+    <button class="home-btn"><a href="{% url 'loginAsStartUp' %}">Login as StartUp</a></button>
+    <button class="home-btn"><a href="{% url 'loginAsStudent' %}">Login as Student</a></button>
+  </div>
 </body>
 </html>
 
