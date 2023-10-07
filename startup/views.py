@@ -41,10 +41,13 @@ def registerAsStudent(req):
   return render(req, 'student/register.html')
 
 def Mentors(req):
-  return render(req, 'mentor/Mentors.html')
+  mentors = Mentor.objects.all()
+  return render(req, 'mentor/Mentors.html', { 'mentors': mentors })
 
 def StartUps(req):
-  return render(req, 'startup/StartUps.html')
+  startups = StartUp.objects.all()
+  return render(req, 'startup/StartUps.html', { 'startups': startups })
 
 def Students(req):
-  return render(req, 'student/Students.html')
+  students = Student.objects.all()
+  return render(req, 'student/Students.html', { 'students': students })
