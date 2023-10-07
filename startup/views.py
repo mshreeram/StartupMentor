@@ -15,3 +15,9 @@ def registerAsStudent(req):
 
 def loginAsMentor(req):
   return render(req, 'mentor/login.html')
+
+def loginAsStartUp(req):
+  return render(req, 'startup/login.html')
+
+def loginAsStudent(req):
+  return render(req, 'student/login.html')
